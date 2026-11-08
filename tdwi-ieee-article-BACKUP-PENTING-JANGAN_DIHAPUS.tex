@@ -1,0 +1,485 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+\usepackage{url}
+
+
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Cross-Sector Evaluation of the TDWI BI \& AI Maturity Model\\
+% {\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+% should not be used
+% }
+% \thanks{Identify applicable funding agency here. If none, delete this.}
+}
+
+\author{
+\IEEEauthorblockN{1\textsuperscript{st} Alfa Yohannis}
+\IEEEauthorblockA{\textit{Department of Informatics} \\
+\textit{Universitas Pradita}\\
+Tangerang, Indonesia \\
+alfa.ryano@gmail.com}
+\and
+\IEEEauthorblockN{1\textsuperscript{nd} Alexander Waworuntu}
+\IEEEauthorblockA{\textit{Department of Informatics} \\
+\textit{Universitas Multimedia Nusantara}\\
+Tangerang, Indonesia \\
+alex.wawo@umn.ac.id}
+}
+
+\maketitle
+
+\begin{abstract}
+This document is a model and instructions for \LaTeX.
+This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
+or Math in Paper Title or Abstract.
+\end{abstract}
+
+\begin{IEEEkeywords}
+component, formatting, style, styling, insert
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+In today's data-driven economy, the ability to extract meaningful insights from data has become a critical determinant of organizational competitiveness and sustainability. Business Intelligence (BI) and Artificial Intelligence (AI) have emerged as two foundational enablers of digital transformation, allowing organizations to turn raw data into strategic assets that guide decision-making, innovation, and efficiency improvement \cite{chen2012business, davenport2007competing}. However, the adoption and maturity levels of BI and AI vary significantly across industries, largely due to contextual differences in resources, regulatory environments, and data governance readiness \cite{popovic2012towards, arnott2015managing}. 
+
+To systematically assess and enhance data and analytics capability, organizations commonly employ maturity models. Among them, The Data Warehousing Institute (TDWI) BI \& AI Maturity Model stands out as one of the most widely adopted frameworks for evaluating organizational progress across five key dimensions--organization, data infrastructure, resources, analytics, and governance \cite{tdwi2020}. The model not only diagnoses the current state of BI/AI maturity but also provides a roadmap toward higher levels of integration, data culture, and business value realization.
+
+This study synthesizes and compares three empirical cases representing distinct industrial contexts: (1) a property development company leveraging BI and AI for asset management and project planning, (2) a construction and planning small-medium enterprise evaluating its BI maturity amidst resource constraints, and (3) a general insurance company implementing big data analytics under strict regulatory compliance and data privacy obligations. Together, these cases represent a cross-sectoral examination of TDWI's applicability and adaptability in Indonesia's business environment, where technological, cultural, and regulatory diversity shape the pace of BI and AI transformation.
+
+Building upon previous findings \cite{becker2009developing, boudreau2005contextualization}, this research seeks to answer two central questions. \begin{enumerate}
+		\item[\textbf{RQ1}] \textbf{Sejauh mana kuesioner TDWI BI dan AI Maturity Model sesuai dan relevan untuk mengukur kematangan BI dan AI pada organisasi skala kecil-menengah (SME) dan non-profit?}
+		
+		Pertanyaan ini bertujuan untuk memahami persepsi responden terkait kejelasan, relevansi isi, kecukupan dimensi, kesesuaian dengan konteks organisasi SME dan non-profit di Indonesia, serta manfaat praktis kuesioner TDWI bagi organisasi mereka. Fokusnya adalah menggali wawasan kualitatif tentang sejauh mana kuesioner ini dapat digunakan secara efektif di luar konteks perusahaan besar.
+		
+		\item[\textbf{RQ2}] \textbf{Perbaikan atau adaptasi apa yang diperlukan pada TDWI BI dan AI Maturity Model agar lebih aplikatif dan kontekstual bagi organisasi SME dan non-profit?}
+		
+		Pertanyaan ini fokus pada perbaikan dan adaptasi, sehingga pertanyaan kualitatif diarahkan untuk menggali rekomendasi praktis dan strategis dari responden. Tujuannya adalah untuk memahami aspek-aspek yang perlu diubah, ditambahkan, atau disederhanakan dalam kuesioner TDWI agar lebih relevan, mudah dipahami, dan dapat diimplementasikan secara efektif di organisasi SME dan non-profit dengan keterbatasan sumber daya dan struktur yang berbeda dari perusahaan besar.
+	\end{enumerate}
+
+
+Penelitian ini memberikan kontribusi dan kebaruan dalam konteks evaluasi dan adaptasi TDWI BI dan AI Maturity Model untuk organisasi SME dan non-profit, yang dijelaskan sebagai berikut:
+
+\begin{enumerate}
+	\item[\textbf{K1.}] \textbf{Kontribusi Empiris:}  
+	Penelitian ini merupakan studi empiris yang mengevaluasi kesesuaian dan relevansi kuesioner TDWI BI dan AI Maturity Model pada organisasi SME dan non-profit di Indonesia. Hasilnya memberikan gambaran praktis tentang bagaimana model ini dipahami dan diterapkan di organisasi dengan sumber daya dan struktur yang berbeda dari perusahaan besar.
+	
+	\item[\textbf{K2.}] \textbf{Kontribusi Metodologis:}  
+	Penelitian ini mengembangkan kerangka evaluasi kualitatif berbasis dimensi clarity, relevance, coverage, contextual fit, dan practical usefulness yang dapat digunakan untuk menilai kesesuaian maturity model global di konteks lokal. Pendekatan ini menggunakan metode \textit{thematic analysis} untuk menghasilkan rekomendasi adaptasi yang aplikatif.
+	
+	\item[\textbf{K3.}] \textbf{Kebaruan Praktis:}  
+	Penelitian ini memberikan rekomendasi adaptasi praktis agar kuesioner TDWI dapat digunakan secara efektif untuk pengembangan BI dan AI di organisasi berskala kecil-menengah dan non-profit dengan keterbatasan sumber daya.
+	
+	\item[\textbf{K4.}] \textbf{Kontribusi Teoretis:}  
+	Penelitian ini menambahkan perspektif teoretis tentang pentingnya contextualisation dan adaptasi maturity model global ketika diterapkan di sektor SME dan non-profit, serta mendukung literatur terkait limitations of one-size-fits-all maturity models dan kebutuhan desain model yang lebih inklusif dan kontekstual.
+\end{enumerate}
+
+
+
+
+\section{Literature Review}
+\label{sec:literature_review}
+
+
+\section{Methodology}
+\label{sec:methodology}
+
+This study employed a qualitative, multi-case evaluative design to assess the applicability of the TDWI BI \& AI Maturity Model as an evaluation instrument for small-to-medium enterprises (SMEs) and non-profit organizations. The primary objective was not to analyze organizational maturity scores but to evaluate how respondents perceived the TDWI questionnaire in terms of clarity, relevance, and contextual fit when applied outside large-enterprise settings.
+
+\textbf{Research design and data sources.}  
+Each student research team conducted a TDWI-based maturity assessment within a partner organization. While the TDWI instrument produced numerical maturity scores across five standard dimensions—\textit{Organization}, \textit{Data Infrastructure}, \textit{Resources}, \textit{Analytics}, and \textit{Governance}—these scores were used only to contextualize respondent feedback. The main data consisted of qualitative summaries drawn from the structured reports submitted by each team. Because the original company responses were confidential, this paper analyzes only those synthesized summaries, which included aggregated findings and respondents’ qualitative evaluations of the instrument.
+
+\textbf{Respondents.} Four organizational case summaries were analyzed to evaluate the applicability of the TDWI BI \& AI Maturity Model across diverse industrial and operational settings. The participating organizations represented four distinct sectors -- financial services, construction and planning service, property development, and the creative industry -- each characterized by different business models, technological environments, and resource capacities. Despite their diversity, all cases were classified as small-to-medium enterprises (SMEs).
+
+\textbf{Evaluation framework.}  
+Respondent feedback in the reports was organized around five meta-evaluation dimensions adapted from established literature on model and instrument evaluation in information systems research \cite{becker2009developing, rosemann2008applicability, boudreau2005contextualization, arnott2015managing, hevner2004design, venable2016design}. These dimensions guided both data collection and analysis:
+
+\begin{itemize}
+    \item \textbf{D1 – Clarity:} The comprehensibility and interpretability of wording, terminology, and instructions in the TDWI questionnaire \cite{becker2009developing}.
+    \item \textbf{D2 – Relevance:} The extent to which the questions and indicators reflect actual BI and AI practices within smaller or mission-driven organizations \cite{rosemann2008applicability}.
+    \item \textbf{D3 – Coverage:} The perceived completeness of the TDWI dimensions in capturing essential aspects of BI and AI maturity \cite{becker2009developing, hevner2004design}.
+    \item \textbf{D4 – Contextual Fit:} The alignment of the questionnaire with environmental and organizational realities of SMEs and non-profits, particularly regarding resource constraints and governance structures \cite{boudreau2005contextualization}.
+    \item \textbf{D5 – Practical Usefulness:} The degree to which the instrument’s results are actionable and beneficial for planning BI and AI development strategies \cite{arnott2015managing, venable2016design}.
+\end{itemize}
+
+These five criteria were operationalized through a set of guiding open-ended questions addressing clarity, relevance, completeness, contextual fit, and practical value (originally coded as P1–P11 in the field protocol). However, because full transcripts of responses were inaccessible, the analysis relied solely on the summarized observations documented in the student team reports.
+
+\textbf{Analysis procedure.}  
+Thematic analysis followed the six-step procedure outlined by Braun and Clarke \cite{braun2006using}, adapted to the multi-case evaluation design.  
+\begin{enumerate}[]
+    \item \textit{Familiarization.} The researchers reviewed the summary reports from each organization and extracted qualitative statements concerning the TDWI BI \& AI Maturity Model.
+    \item \textit{Initial Coding.} Codes were generated corresponding to five pre-defined evaluative dimensions: \textit{Clarity}, \textit{Relevance}, \textit{Coverage}, \textit{Contextual Fit}, and \textit{Practical Usefulness}.
+    \item \textit{Theme Identification.} Potential themes within each dimension were identified and compared across the four organizational cases to detect recurring patterns and divergences.
+    \item \textit{Theme Review.} The emerging themes were refined to ensure internal coherence and cross-context consistency.
+    \item \textit{Definition and Naming.} Finalized thematic categories (D1–D5) were defined and labeled, forming the structure reported in Section~\ref{sec:results}.
+    \item \textit{Synthesis and Reporting.} Findings were integrated through tabulated summaries and interpretive narrative discussion to highlight common patterns and sector-specific insights, as reported in Sections~\ref{sec:results} and~\ref{sec:discussion}.
+\end{enumerate}
+
+\textbf{Scope of inference.}  
+Because the study drew upon aggregated case summaries rather than raw organizational data, the results reflect interpretive insights into the TDWI model’s suitability and potential for contextual adaptation rather than statistical validation. This design provides an ethically compliant and methodologically transparent framework for understanding how the TDWI instrument performs as a diagnostic model across diverse organizational contexts.
+
+
+\section{Results}
+\label{sec:results}
+
+This section presents the synthesized findings derived from the qualitative summaries of organizational case reports. 
+The analysis follows the five evaluation dimensions defined in Section~\ref{sec:methodology}.
+
+\subsection{Clarity of the TDWI Questionnaire (D1)}
+\label{sec:clarity_results}
+
+\begin{table}[h!]
+\centering
+\caption{Findings on Clarity of the TDWI BI \& AI Maturity Model (D1)}
+\label{tab:d1_clarity}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{p{.16\linewidth} p{.74\linewidth}}
+\hline
+\textbf{Organization} & \textbf{Key Observations on Clarity, Language, and Interpretability} \\ \hline
+
+\textbf{Insurance Company} & 
+Generally understandable, except for technical terms such as \emph{data stewardship}, \emph{lineage}, and \emph{predictive analytics}, which required clarification.  
+Respondents suggested simpler Bahasa wording and examples related to claims and underwriting. \\ \hline
+
+\textbf{Construction \& Planning SME} & 
+Mostly clear but some abstract or overlapping items (e.g., between “Resources” and “Organization”).  
+Terms like “governance framework” needed simplification and examples relevant to project planning. \\ \hline
+
+\textbf{Property Development Company} & 
+Generally clear but too generic for property processes.  
+Corporate terms like “enterprise data platform” confused non-technical staff; respondents preferred simpler, sector-specific phrasing. \\ \hline
+
+\textbf{Social-Media Marketing Agency} & 
+Clear overall, though some technical language (e.g., “data warehouse,” “data quality metrics”) was unfamiliar to creative staff.  
+Better understood when reworded using campaign and content-related examples. \\ \hline
+\end{tabular}
+\end{table}
+
+
+As summarized in Table~\ref{tab:d1_clarity}, feedback across all four organizations consistently indicated that the TDWI BI \& AI Maturity Model offers a clear and logically structured framework but relies heavily on enterprise-level terminology that can limit comprehension among non-technical staff or smaller organizations. Respondents frequently noted that several technical expressions—particularly within the \textit{Data Infrastructure} and \textit{Analytics} dimensions—assume prior exposure to advanced BI or AI concepts, leading to inconsistent interpretations across functional roles.
+
+Three key themes emerged from the cross-case synthesis. First, respondents emphasized the need to simplify technical language and use business-oriented equivalents for terms such as “data pipeline,” “data governance,” and “analytic center of excellence.” Second, participants recommended including brief contextual examples or definitions within the questionnaire to support consistent interpretation among respondents with varying levels of data literacy. Third, several organizations suggested revising the maturity-stage labels to reflect gradual progress markers (e.g., “initial,” “developing,” “operational,” “optimized”) more suitable for SMEs and creative sectors.
+
+Overall, the clarity analysis highlights that linguistic accessibility and contextual precision are prerequisites for ensuring valid BI and AI maturity assessments. Simplifying terminology, adding contextual guidance, and tailoring language to sectoral realities would enhance the interpretive reliability, inclusiveness, and overall usability of the TDWI framework.
+
+\subsection{Relevance of the TDWI Indicators (D2)}
+\label{sec:relevance_results}
+
+\begin{table}[h!]
+\centering
+\caption{Findings on Relevance of the TDWI BI \& AI Indicators (D2)}
+\label{tab:d2_relevance}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{p{.16\linewidth} p{.74\linewidth}}
+\hline
+\textbf{Organization} & \textbf{Key Observations on Relevance and Alignment with Actual BI/AI Practices} \\ \hline
+
+\textbf{Insurance Company} & 
+Generally relevant for assessing BI/AI maturity, though some items (e.g., “enterprise-wide analytics strategy”) did not match local operational scope.  
+Indicators on governance and data quality were seen as highly applicable.  \\ \hline
+
+\textbf{Construction \& Planning SME} & 
+Mostly aligned with current practices, but some questions assumed large-scale IT environments.  
+Respondents noted that project-based analytics and budgeting were underrepresented. \\ \hline
+
+\textbf{Property Development Company} & 
+Relevance rated moderate; TDWI dimensions fit conceptually but lacked property-specific indicators.  
+Respondents emphasized adding items on asset management, project portfolio, and spatial data analytics.  \\ \hline
+
+\textbf{Social-Media Marketing Agency} & 
+Generally relevant but some indicators focused too heavily on IT infrastructure.  
+More emphasis suggested on campaign analytics, engagement metrics, and creative content data integration.  \\ \hline
+\end{tabular}
+\end{table}
+
+
+\subsection{Coverage of BI and AI Dimensions (D3)}
+\label{sec:coverage_results}
+
+\begin{table}[h!]
+\centering
+\caption{Findings on Coverage of BI and AI Dimensions (D3)}
+\label{tab:d3_coverage}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{p{.16\linewidth} p{.74\linewidth}}
+\hline
+\textbf{Organization} & \textbf{Key Observations on Coverage of TDWI Dimensions} \\ \hline
+
+\textbf{Insurance Company} & Generally comprehensive, covering key aspects of BI/AI maturity. However, regulatory compliance and data ethics are underrepresented, prompting the addition of a new “Regulatory \& Compliance” dimension. \\ \hline
+
+\textbf{Construction \& Planning SME} & The five dimensions are mostly relevant but not equally weighted. The model focuses more on data and technology, while project-oriented dimensions like resource prioritization and stakeholder coordination are less visible. \\ \hline
+
+\textbf{Property Development Company} & Considered sufficiently broad, yet misses sector-specific needs like governance of project data, sustainability metrics, and inter-departmental data integration. Suggested slight adaptation to local business context. \\ \hline
+
+\textbf{Social-Media Marketing Agency} & Mostly applicable but biased toward large enterprises. Creative data use (content, engagement, sentiment) and unstructured data handling are not fully captured in the existing TDWI dimensions. \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Contextual Fit for SMEs and Non-Profits (D4)}
+\label{sec:contextual_fit_results}
+
+\begin{table}[h!]
+\centering
+\caption{Findings on Contextual Fit for SMEs and Non-Profits (D4)}
+\label{tab:d4_contextualfit}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{p{.16\linewidth} p{.74\linewidth}}
+\hline
+\textbf{Organization} & \textbf{Key Observations on Contextual Fit and Realism} \\ \hline
+
+\textbf{Insurance Company} & 
+Partly aligned with organizational reality but assumed enterprise-level resources.  
+Indicators on AI governance and data infrastructure felt too advanced for current scale.  
+Suggested a simplified SME version focusing on operational analytics. \\ \hline
+
+\textbf{Construction \& Planning SME} & 
+Model seen as useful conceptually but mismatched with SME constraints.  
+Respondents noted that budget, manpower, and project-based workflows differ from TDWI’s corporate assumptions. \\ \hline
+
+\textbf{Property Development Company} & 
+Generally fits in structure but lacks local adaptation.  
+Assumes centralized governance and mature data teams uncommon in medium enterprises; needs scaled-down criteria for realism. \\ \hline
+
+\textbf{Social-Media Marketing Agency} & 
+Only partially fits SME conditions.  
+Framework overlooks agile, fast-paced creative operations and informal decision-making typical of agencies; respondents preferred lighter, flexible assessment tools. \\ \hline
+\end{tabular}
+\end{table}
+
+
+\subsection{Practical Usefulness of the Instrument (D5)}
+\label{sec:usefulness_results}
+
+\begin{table}[h!]
+\centering
+\caption{Findings on Practical Usefulness of the TDWI BI \& AI Instrument (D5)}
+\label{tab:d5_usefulness}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{p{.16\linewidth} p{.74\linewidth}}
+\hline
+\textbf{Organization} & \textbf{Key Observations on Usefulness for Planning and Capability Development} \\ \hline
+
+\textbf{Insurance Company} & 
+Considered highly useful for diagnosing BI/AI maturity and planning improvement steps.  
+Respondents valued the structured roadmap potential but suggested simplifying for operational managers. \\ \hline
+
+\textbf{Construction \& Planning SME} & 
+Viewed as a useful reflection tool for aligning digital priorities, though limited by the technical depth of some items.  
+Better suited when complemented by qualitative discussion during planning sessions. \\ \hline
+
+\textbf{Property Development Company} & 
+Perceived as beneficial for internal benchmarking and identifying governance gaps.  
+However, required contextual adaptation before being directly used for performance planning. \\ \hline
+
+\textbf{Social-Media Marketing Agency} & 
+Useful for awareness and goal-setting but too enterprise-oriented for small agencies.  
+Worked best when indicators were translated into creative and marketing metrics. \\ \hline
+\end{tabular}
+\end{table}
+
+
+\subsection{Cross-Dimensional Themes and Adaptation Insights}
+% Integrate overlapping findings across dimensions, summarizing broader insights about model applicability, limitations, and adaptation needs.
+
+\subsection{Summary of Key Findings}
+% Provide a concise synthesis table or bullet points summarizing main observations and implications from all five dimensions.
+
+
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{RQ1: Suitability and Relevance of the TDWI BI \& AI Maturity Model for SMEs and Non-Profits}
+\label{sec:discussion_rq1}
+
+Findings across the four case studies indicate that the TDWI BI \& AI Maturity Model is \textit{generally suitable and relevant} for assessing the maturity of BI and AI practices within SMEs and non-profits, yet certain limitations affect its interpretability and contextual accuracy. 
+
+Overall, respondents found the \textbf{clarity (D1)} of the questionnaire acceptable, though several technical terms—such as \emph{data governance}, \emph{predictive analytics}, and \emph{data warehouse modernization}—required simplification or translation into Bahasa Indonesia for non-technical users.  
+In terms of \textbf{relevance (D2)}, most indicators aligned conceptually with organizational practices but sometimes assumed enterprise-scale data infrastructure and dedicated analytics teams, which are uncommon in SMEs.  
+
+The \textbf{coverage of BI and AI dimensions (D3)} was viewed as comprehensive but slightly unbalanced, focusing more on data and technology while underrepresenting human, contextual, and regulatory aspects. Respondents across industries acknowledged the framework’s strength in structuring reflection and assessment but highlighted the need for examples and benchmarks that better reflect smaller-scale operations.  
+
+Regarding \textbf{contextual fit (D4)} and \textbf{practical usefulness (D5)}, participants recognized the instrument’s diagnostic value and its potential as a strategic planning guide. However, most agreed that it would be more effective if adapted to local governance practices, resource constraints, and the informal decision-making structures typical of SMEs and non-profits.  
+In sum, while the TDWI model provides a strong conceptual foundation, its practical implementation in smaller organizations requires contextual simplification and sectoral customization.
+
+\subsection{RQ2: Required Adaptations to Enhance Contextual Applicability of the TDWI Model}
+\label{sec:discussion_rq2}
+
+Based on respondents’ recommendations, several key adaptations are needed to make the TDWI BI \& AI Maturity Model more applicable to SMEs and non-profits in Indonesia.  
+
+First, \textbf{linguistic and cultural adaptation} is essential. Simplifying English and technical terms into locally understood language ensures accessibility for respondents without BI or IT backgrounds. Examples contextualized to local industries—such as claims and underwriting (insurance), project costing (construction), asset management (property), and campaign analytics (marketing)—significantly improve clarity and engagement.
+
+Second, the addition of \textbf{contextual dimensions} such as \emph{Resource Prioritization}, \emph{Stakeholder Management}, and \emph{Regulatory \& Compliance} is recommended. These dimensions capture challenges unique to SMEs, including budget limitations, multitasking roles, and regulatory awareness gaps.
+
+Third, the \textbf{scoring and interpretation mechanism} could be adjusted to emphasize practical business outcomes rather than purely technical achievements. Respondents proposed metrics linked to process efficiency, data-driven decision quality, or customer impact, instead of infrastructure sophistication alone.
+
+Finally, participants suggested transforming the TDWI instrument into a more \textbf{interactive and scalable toolkit}, possibly digital, that includes self-assessment prompts, brief explanations, and automatically generated improvement recommendations. Such an adaptation would bridge the gap between theoretical assessment and actionable planning for smaller organizations.  
+
+Overall, these refinements would enhance the TDWI model’s contextual fit and practical value, allowing SMEs and non-profits to use it not only for maturity assessment but also as a roadmap for gradual, sustainable data transformation.
+
+
+\subsection{Implications and Future Recommendations}
+\label{sec:implications_recommendations}
+
+\textbf{Practical Implications.}  
+The study highlights the need for a simplified and context-sensitive version of the TDWI BI \& AI Maturity Model to better serve SMEs and non-profit organizations.  
+Practitioners can benefit from adapting the questionnaire with localized terminology, sector-specific examples, and scaled-down performance indicators that reflect realistic organizational capabilities.  
+In practice, the instrument should function not only as a diagnostic tool but also as a \textit{developmental guide} to facilitate capability planning, resource allocation, and data-driven transformation.  
+Workshops and internal discussions can further enhance its usefulness by aligning results with strategic goals and decision-making processes.
+
+\textbf{Theoretical Implications.}  
+From a theoretical standpoint, this study supports the argument that maturity models—originally designed for large enterprises—require contextualization to remain valid across organizational scales and cultures.  
+The findings reinforce the need to embed \textit{adaptive and interpretive flexibility} into maturity frameworks, ensuring that they capture not just technical advancement but also behavioral, cultural, and governance readiness.  
+This contributes to the broader discourse on \emph{localized model adaptation} within information systems research and suggests a shift toward more inclusive, domain-aware maturity modeling approaches.
+
+\textbf{Future Recommendations.}  
+Future research should explore the development of an \textbf{AI-assisted contextual adaptation system} for maturity assessments.  
+Such a system could employ natural language processing (NLP) or large language models (LLMs) to automatically adjust the language, examples, and indicators of the TDWI questionnaire based on industry type, organizational size, and respondent profile.  
+This would enable a dynamic, personalized assessment experience that reduces interpretation barriers and enhances the practical relevance of global frameworks in local contexts.  
+Further studies could evaluate the reliability and validity of this AI-enhanced model through cross-sector experiments and longitudinal adoption tracking among SMEs.
+
+
+
+\section{Conclusions}
+\label{sec:conclusions}
+
+This study evaluated the applicability of the TDWI BI \& AI Maturity Model across three distinct industrial contexts—property development, construction and planning, and general insurance. The findings confirm that the TDWI framework remains a valuable foundation for assessing organizational progress in analytics and data-driven transformation but requires contextual adaptation to maintain validity in small, medium, and regulated organizations. The adapted version introduced sector-sensitive terminology, simplified maturity descriptors, and an additional dimension for \textit{Regulatory \& Compliance}. These refinements improved interpretive clarity, user engagement, and relevance to local operational realities, illustrating that maturity models are most effective when tailored to resource and governance conditions rather than applied uniformly.
+
+Overall, the cross-sector analysis shows that TDWI's five original dimensions—\textit{Organization}, \textit{Data Infrastructure}, \textit{Resources}, \textit{Analytics}, and \textit{Governance}—remain conceptually sound, but contextual calibration of indicators and maturity scales enhances practical usefulness. The study contributes a replicable approach for adapting maturity frameworks and offers actionable guidelines such as prioritizing data governance, planning incremental 6–24-month analytics roadmaps, and reinforcing interdepartmental collaboration. Future research should extend these findings through quantitative validation and longitudinal analysis to test the reliability of the adapted indicators and their impact on organizational performance. Comparative studies with Gartner and DAMA-DMBOK maturity frameworks could also enrich theoretical integration and inform best practices for managing data-driven transformation across diverse industries.
+
+
+\section*{Acknowledgment}
+We thank Dyah Ayu Arditya, Milytia Christabella Tumengkol, and Maria Veronika for their valuable contributions to data collection, analysis, and report. This research was supported by Universitas Pradita and Universitas Multimedia Nusantara.
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
+
+
+
+
+%\section{Results 2}
+%\label{sec:results_2}
+%
+%
+%\subsection{Findings on Suitability and Relevance of the TDWI BI \& AI Maturity Model (RQ1)}
+%\label{sec:rq1_results}
+%
+%\begin{table}[h!]
+%\centering
+%\caption{RQ1 Findings: Suitability and Relevance of the TDWI BI \& AI Maturity Model}
+%\label{tab:rq1_findings}
+%\renewcommand{\arraystretch}{1.2}
+%\begin{tabular}{p{.16\linewidth} p{.74\linewidth}}
+%\hline
+%\textbf{Organization} & \textbf{Key Findings on TDWI Suitability and Relevance} \\ \hline
+%
+%\textbf{Insurance Company} & The model has been applied successfully and demonstrated its ability to assess organizational maturity. TDWI was perceived as a valuable reference framework but required linguistic and indicator adjustments. The \textit{Organization} dimension was considered relevant due to strong executive support, though the data-driven culture remained uneven. Cloud migration was underway, yet external partner integration remained batch-based and error-prone. A shortage of roles such as data engineers and MLOps specialists was noted, while governance was identified as the weakest area due to immature standards and privacy controls. \\ \hline
+%
+%\textbf{Construction \& Planning SME} & The model was applied effectively and shown suitable for assessing maturity. Respondents confirmed strong relevance in the \textit{Organization} and \textit{Data Infrastructure} dimensions, reflecting actual investment priorities and challenges. However, several \textit{Analytics} and \textit{Resources} indicators were viewed as too enterprise-oriented (e.g., MLOps, generative AI). Simplified terminology and scaled indicators were recommended to enhance applicability for SMEs. \\ \hline
+%
+%\textbf{Property Development Company} & The model was applied effectively and provided a clear maturity diagnosis. The assessment produced an average maturity score corresponding to Stage 3 – \textit{Established}, with dimensions relatively balanced except for \textit{Governance}, which remained the weakest. The TDWI framework successfully mapped maturity levels, showing consistent scoring across roles and confirming its diagnostic relevance to the property sector. \\ \hline
+%
+%\textbf{Social-Media Marketing Agency} & The model was applied successfully and shown capable of assessing early-stage maturity. The organization was positioned at the \textit{Novice–Repeatable} stage. Leadership strongly supported BI and AI but lacked a formal roadmap. Data usage remained ad-hoc, governance unstructured, and technology fragmented with limited self-service BI adoption. Despite high cultural readiness, systematic maturity mechanisms were still emerging. \\ \hline
+%\end{tabular}
+%\end{table}
+%
+%As summarized in Table~\ref{tab:rq1_findings}, reports across all four organizations generally agreed that the TDWI BI \& AI Maturity Model serves as a valuable framework for assessing organizational analytics maturity, though linguistic and contextual adaptation is required to ensure relevance for smaller or creative enterprises. In the insurance company, the framework was valued for its structured guidance but required adjustment in indicator language and greater emphasis on data governance; most firms remained at partial adoption stages, with uneven data culture and persistent challenges in partner-data integration and quality management. The construction and planning SME found the \textit{Organization} and \textit{Data Infrastructure} dimensions highly relevant but viewed several \textit{Analytics} and \textit{Resources} indicators as too advanced for their operational scale, underscoring the need to simplify references to specialized AI or MLOps teams. In the property development company, the TDWI questionnaire effectively reflected current conditions, yielding realatively balanced scores across dimensions, all at Stage 3 – \textit{Established}, with \textit{Governance} as the weakest area. Meanwhile, the social-media marketing agency, positioned at the \textit{Novice–Repeatable} level, exhibited strong leadership commitment and a culture of experimentation but lacked formalized data governance, defined roles, and integrated technology platforms. Collectively, these findings affirm that while the TDWI model’s core dimensions are conceptually sound, their practical application benefits from contextual recalibration of terminology, scaling, and indicator focus to better capture the realities of SMEs and non-corporate organizations.
+%
+%
+%\subsection{Findings on Recommended Adaptations to the TDWI BI \& AI Maturity Model (RQ2)}
+%\label{sec:rq2_results}
+%
+%
+%\begin{table}[h!]
+%\centering
+%\caption{RQ2 Findings: Recommended Adaptations to the TDWI BI \& AI Maturity Model}
+%\label{tab:rq2_findings}
+%\renewcommand{\arraystretch}{1.2}
+%\begin{tabular}{p{.16\linewidth} p{.74\linewidth}}
+%\hline
+%\textbf{Organization} & \textbf{Key Adaptation Recommendations} \\ \hline
+%
+%\textbf{Insurance Company} & Add a new \textit{Regulatory \& Compliance} dimension covering PDP Law alignment, ISO/IEC 27001, and OJK standards. Include indicators for lawful data processing, consent management, DPIA for high-risk use cases, and data-subject rights. Adjust scales and language using business terminology and incremental progress options (pilot, limited, enterprise). \\ \hline
+%
+%\textbf{Construction \& Planning SME} & Simplify question wording and answer options to reduce technical jargon. Add SME-specific dimensions such as \textit{Resource Prioritization} and \textit{Stakeholder Management} to assess how resource-constrained firms allocate efforts and manage expectations. Reorient indicators toward business outcomes (e.g., efficiency gains, cost reduction) rather than technical metrics. \\ \hline
+%
+%\textbf{Property Development Company} & Strengthen the \textit{Governance} dimension by including local regulatory compliance and information-management standards. Contextualize \textit{Resources} to measure multidisciplinary staff capabilities (architecture, analytics, internal IT). Extend \textit{Analytics} to include property-market, consumer-trend, and development-planning data. Simplify technical language for non-technical managers. \\ \hline
+%
+%\textbf{Social-Media Marketing Agency} & Expand Data Infrastructure to Include System Integration Maturity. Enhance Resources with Data Leadership and Stewardship Indicators, e.g., Chief Data Officer, Data Champion. Emphasize the integration of workflow in the creative industry and BI/AI analytics. \\ \hline
+%\end{tabular}
+%\end{table}
+%
+%As shown in Table~\ref{tab:rq2_findings}, each organization proposed targeted refinements to improve the contextual fit of the TDWI BI \& AI Maturity Model. Summing up, the recommendations are as follow.
+%
+%\textit{R1: Introduce a Regulatory \& Compliance Dimension.}  
+%Supported by the insurance company and the property development firm, this recommendation underscores the need to embed legal and compliance considerations within the TDWI framework. Respondents highlighted alignment with Indonesia’s PDP Law, ISO/IEC 27001, and OJK regulations as essential. Including this dimension would allow organizations to assess data protection readiness, lawful processing, and privacy-by-design maturity—crucial for regulated sectors such as finance and property development.  
+%
+%\textit{R2: Simplify Language and Scaling for Clarity.}  
+%The construction and planning SME, along with property respondents, emphasized simplifying the questionnaire’s technical wording and answer options to improve accessibility for non-technical managers. Simplified phrasing and incremental progress scales (e.g., pilot, limited, enterprise) would improve interpretive consistency and reduce ambiguity, especially for organizations new to BI and AI practices.  
+%
+%\textit{R3: Reorient Indicators Toward Business Impact and Practical Usability.}  
+%Respondents across sectors proposed shifting focus from purely technical metrics (e.g., data volume, platform sophistication) to business outcomes such as efficiency, cost optimization, and stakeholder alignment. This change would make the TDWI assessment more actionable for SMEs and non-profits, enabling them to translate maturity insights into measurable performance gains.  
+%
+%\textit{R4: Expand Data Infrastructure for Integration Maturity.}  
+%Findings from the social-media marketing agency emphasized the need for evaluating system integration maturity as part of the \textit{Data Infrastructure} dimension. Indicators should assess unified data platforms, automated pipelines, and interoperability between creative tools and analytics systems—reflecting the growing importance of integration for data-driven decision making in dynamic, creative industries.  
+%
+%\textit{R5: Enhance Resources with Data Leadership and Stewardship Indicators.}  
+%Both the social-media marketing agency and property respondents stressed the importance of formalized data leadership. Expanding the \textit{Resources} dimension to include roles such as Chief Data Officer (CDO) or Data Champion would strengthen accountability, governance, and the sustainability of BI/AI initiatives in smaller organizations.  
+%
+%
+%\section{Discussion}
+%\label{sec:discussion}
+%
+%The results confirm that while global maturity frameworks such as the TDWI BI \& AI Maturity Model provide a solid conceptual foundation for assessing analytical capability, contextualization is essential when applying them to smaller or resource-constrained organizations. Quantitative assessments may indicate that some organizations have achieved a promising maturity stage, supported by a growing data infrastructure and managerial awareness of analytics value. However, qualitative evidence often reveals persistent challenges in advancing toward higher levels of analytical integration, primarily due to limited human resources, constrained budgets, and the partial relevance of generic TDWI indicators. These findings reinforce the argument that maturity models, when applied without considering contextual realities, risk producing assessments that are either overly optimistic or insufficiently actionable \cite{arnott2015managing, becker2009developing}.  
+%
+%\textit{Theoretical implications.}  
+%This study highlights the importance of \textit{contextual fit} in the theoretical application of global maturity models. Although TDWI provides a comprehensive, multi-dimensional structure, its standardized indicators often fail to capture the operational nuances of small-to-medium-scale or highly regulated organizations. This supports existing critiques of the “one-size-fits-all” nature of maturity models and advances the theoretical understanding that maturity assessment should be adaptive and contingent on organizational characteristics \cite{boudreau2005contextualization, rosemann2008applicability}. The adaptation of TDWI indicators—through simplification of terminology, integration of sector-specific examples, and the inclusion of a \textit{Regulatory \& Compliance} dimension—demonstrates how contextualization can enhance construct validity and interpretive accuracy in applied research.
+%
+%\textit{Practical implications.}  
+%From a managerial standpoint, the findings provide actionable insights for organizations seeking to strengthen their BI and AI maturity. Strategic focus should be placed on improving analytical competencies, cultivating a data-driven culture across departments, and gradually expanding analytics practices from descriptive to predictive levels. A phased roadmap can support this transition by leveraging existing data infrastructure while addressing resource constraints. 
+%
+%\textit{Future recommendations.} 
+%Beyond organizational practices, this study also highlights the opportunity to develop an \textit{adaptive digital tool} capable of tailoring maturity assessments such as TDWI to diverse organizational contexts. Future research could explore the use of \textit{Artificial Intelligence (AI)} and \textit{Large Language Models (LLMs)} to dynamically rephrase, localize, and recommend model indicators suited to an organization’s size, industry, and governance environment. Such intelligent tools would operationalize contextualization at scale, transforming maturity models from static diagnostic instruments into adaptive systems that evolve alongside organizational growth and technological advancement.
+%
+%
+%
+%\subsection{Threats to Validity and Limitations}
+%\label{sec:threats_to_validity_and_limitations}
+%
+%\section{Limitasi dan Ancaman terhadap Validitas}
+%Penelitian ini memiliki beberapa keterbatasan (limitation) serta potensi ancaman terhadap validitas (threats to validity) yang perlu diperhatikan dalam interpretasi hasilnya.
+%
+%\begin{enumerate}
+%	\item[\textbf{L1.}] \textbf{Generalisasi Temuan}  
+%	Penelitian ini menggunakan pendekatan studi kasus kualitatif dengan jumlah responden yang terbatas (sekitar lima orang per peneliti) dari SME dan non-profit. Oleh karena itu, temuan bersifat kontekstual dan tidak dapat digeneralisasi ke seluruh organisasi SME dan non-profit secara luas tanpa validasi lanjutan.
+%	
+%	\item[\textbf{L2.}] \textbf{Variasi Latar Belakang Responden}  
+%	Responden memiliki latar belakang peran dan pengalaman yang berbeda terkait BI dan AI, sehingga interpretasi mereka atas pertanyaan evaluasi mungkin bervariasi tergantung pemahaman dan keterlibatan mereka dalam praktik BI dan AI organisasi.
+%	
+%	\item[\textbf{L3.}] \textbf{Bias Penilaian Responden}  
+%	Penilaian responden dapat dipengaruhi oleh preferensi pribadi mereka terhadap maturity model tertentu, pengalaman sebelumnya dengan asesmen BI dan AI, atau bias organisasi terhadap framework global seperti TDWI.
+%	
+%	\item[\textbf{L4.}] \textbf{Threats to Construct Validity}  
+%	Potensi ancaman terhadap validitas konstruk muncul apabila dimensi evaluasi yang digunakan belum sepenuhnya mencakup seluruh aspek kesesuaian dan relevansi maturity model, atau jika interpretasi pertanyaan berbeda di antara responden.
+%	
+%	\item[\textbf{L5.}] \textbf{Threats to Internal Validity}  
+%	Faktor eksternal seperti kebijakan organisasi yang sedang berubah, prioritas proyek lain, atau keterbatasan waktu responden saat wawancara dapat memengaruhi kualitas dan kedalaman jawaban.
+%	
+%	\item[\textbf{L6.}] \textbf{Threats to External Validity}  
+%	Temuan penelitian ini mungkin kurang relevan untuk organisasi berskala besar atau perusahaan multinasional dengan struktur, sumber daya, dan kebutuhan BI serta AI yang jauh lebih kompleks dibanding SME dan non-profit.
+%	
+%\end{enumerate}
+%
+%Meskipun demikian, penelitian ini tetap memberikan kontribusi awal yang penting dalam memahami kesesuaian, relevansi, serta kebutuhan adaptasi kuesioner TDWI BI dan AI Maturity Model untuk digunakan secara efektif di konteks organisasi SME dan non-profit di Indonesia.
